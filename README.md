@@ -8,7 +8,7 @@ Setup Instructions
 2. Run with Docker Compose:
 
 How Routing Works
-- Nginx listens on port `8080`.
+- Nginx listens on port `8081`.
 - Requests to `/alpha` go to the Alpha service (`port 5000`).
 - Requests to `/beta` go to the Beta service (`port 5001`).
 
