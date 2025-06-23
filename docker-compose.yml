@@ -1,0 +1,21 @@
+services:
+  alpha-service:
+    build: ./alpha-service
+    container_name: alpha-service
+    ports:
+      - "9001:9001"
+
+  beta-service:
+    build: ./beta-service
+    container_name: beta-service
+    ports:
+      - "9002:9002"
+
+  nginx-proxy:
+    build: ./nginx
+    container_name: nginx-proxy
+    ports:
+      - "8081:80"
+    depends_on:
+      - alpha-service
+      - beta-service
