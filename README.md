@@ -1,4 +1,4 @@
-# DevOps Reverse Proxy Assignment
+# DevOps Reverse Proxy Project
 
 This project sets up two backend services (Alpha and Beta) with an Nginx reverse proxy using Docker Compose.
 
